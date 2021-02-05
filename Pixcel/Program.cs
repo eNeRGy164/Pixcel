@@ -19,7 +19,7 @@ for (int y = 1; y <= bitmap.Width; y++)
 
     for (int x = 1; x <= bitmap.Height; x++)
     {
-        worksheet.Row(x).Height = 25;
+        worksheet.Row(x).Height = 27.5;
         worksheet.Cells[x, y].Style.Fill.PatternType = ExcelFillStyle.Solid;
         worksheet.Cells[x, y].Style.Fill.BackgroundColor.SetColor(bitmap.GetPixel(y - 1, x - 1));
     }
